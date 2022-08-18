@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: jornadaspring-service
+  namespace: 
+spec:
+  selector:
+    app: jornadaspring
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080

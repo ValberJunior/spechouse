@@ -1,0 +1,19 @@
+project:
+  name: jornadaspring
+  description: Uma jornada Safira utilizando Spring / maven
+  import-type: openapi_spec
+  java:
+    management: maven
+    springbootVersion: 2.5.13
+    package: com.safira.demo
+    version: java11
+    quarkusVersion: null
+  language: java
+  framework: springboot
+  applicationPort: "8080"
+  kubernetes:
+    namespace: null
+  docker:
+    registry: null
+  export-openapi-kubernetes: false
+  dataBase: null

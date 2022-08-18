@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jornadaspring-deployment
+  namespace: 
+  labels:
+    app: jornadaspring
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jornadaspring
+  template:
+    metadata:
+      labels:
+        app: jornadaspring
+    spec:
+      containers:
+      - name: jornadaspring-image
+        image: 
+        ports:
+        - containerPort: 8080
